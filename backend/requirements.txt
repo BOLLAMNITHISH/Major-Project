@@ -1,0 +1,17 @@
+# FastAPI & server
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic==2.10.4
+pydantic-settings==2.7.0
+
+# Database
+sqlalchemy==2.0.36
+aiosqlite==0.20.0
+
+# ML / Vision (torchvision ViT — matches model/train_vit_pytorch.py)
+torch>=2.2.0
+torchvision>=0.17.0
+Pillow>=10.4.0
+numpy>=1.26.0
+matplotlib>=3.8.0

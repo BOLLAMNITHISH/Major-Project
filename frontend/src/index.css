@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-screen bg-surface-950 text-slate-100 antialiased;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+@layer utilities {
+  .glass {
+    @apply border border-white/[0.08] bg-white/[0.04] shadow-glass backdrop-blur-xl;
+  }
+  .glass-strong {
+    @apply border border-white/[0.1] bg-white/[0.07] shadow-glass-lg backdrop-blur-2xl;
+  }
+  .text-gradient-clinical {
+    @apply bg-gradient-to-r from-clinical-300 via-cyan-200 to-teal-300 bg-clip-text text-transparent;
+  }
+}
+
+/* Smooth scrolling for in-page anchors */
+html {
+  scroll-behavior: smooth;
+}
